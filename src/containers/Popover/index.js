@@ -1,0 +1,1 @@
+import {Vertical} from './Vertical';

@@ -1,0 +1,29 @@
+.app_container{
+    height: 100%;
+}
+
+.app_container_column{
+    height: 100%;
+    padding: 0px;
+}
+
+@media screen and (min-width:0px) and (max-width:767px) {
+    .app_container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+    .app_container{
+        padding-left: 100px;
+        padding-right: 100px;  
+    }
+}
+
+@media screen and (min-width:992px){
+    .app_container{
+        padding-left: 200px;
+        padding-right: 200px;  
+    }
+}
