@@ -4,6 +4,11 @@
     width: 200px;
     right:0px;
     margin-top: 54px;
+    display: none;
+}
+
+.vertical_options_holder_active{
+    display: block;
 }
 
 .vertical_options_container{
