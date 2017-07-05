@@ -1,4 +1,5 @@
-import React from 'React';
+import React from 'react';
+import './index.css';
 
 export const Vertical = () => {
     return (
