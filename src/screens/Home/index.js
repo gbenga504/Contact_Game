@@ -1,22 +1,22 @@
 import React from "react";
-import { Layout } from "../../containers/Layout";
+import { Layout } from "../../components/Layout";
 import { Header } from "./Header";
 import { Body } from "./Body";
 import { Footer } from "./Footer";
-import { Feedback } from "../../containers/popover";
+import { Feedback } from "../../components/popover";
 
 export default class Home extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      isTopOptionVisible: false,
-      isFeedbackVisible: false
+      isMenuVisible: false,
+      isFeedbackVisible: false,
     };
   }
 
-  displayTopPopOver = () => {
+  toggleMenuPopOver = () => {
     this.setState((prevState, prevProp) => {
-      return { isTopOptionVisible: !prevState.isTopOptionVisible };
+      return { isMenuVisible: !prevState.isMenuVisible };
     });
   };
 
@@ -32,8 +32,8 @@ export default class Home extends React.PureComponent {
         <div className="col-xs-12" style={{ height: "100%" }}>
           <Layout>
             <Header
-              isTopOptionVisible={this.state.isTopOptionVisible}
-              onDisplayTopPopOver={this.displayTopPopOver}
+              shouldShow={this.state.isMenuVisible}
+              toggleMenu={this.toggleMenuPopOver}
             />
             <Body />
           </Layout>
