@@ -10,7 +10,7 @@ export const Body = () => {
           <TextRenderer />
           <ButtonRenderer>
             <Button icon="ei-sc-facebook" text="Continue with Facebook" />
-            <Button icon="ei-sc-twitter" text="Continue with Tacebook" style={{ marginLeft: "300px" }} />
+            <Button icon="ei-sc-twitter" text="Continue with Twitter" style={{ marginLeft: "300px" }} />
           </ButtonRenderer>
         </div>
       </div>

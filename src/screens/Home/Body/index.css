@@ -42,6 +42,10 @@
     padding-left: 20px;
 }
 
+.social_button:hover{
+    background: #004d40;
+}
+
 .icon--ei-sc-facebook {
     fill: #fff;
 }

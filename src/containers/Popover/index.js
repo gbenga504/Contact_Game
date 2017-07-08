@@ -1,3 +1,4 @@
 import {Vertical} from './Vertical';
+import {Feedback} from './Feedback';
 
-export {Vertical};
+export {Vertical, Feedback};
