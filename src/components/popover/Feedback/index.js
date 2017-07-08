@@ -34,7 +34,13 @@ export class Feedback extends React.PureComponent {
         }
       >
         <div className="col-xs-12 col-xs-offset-4 col-xs-4 feedback_card_holder">
-          <div className={this.state.isFeedbackMessageVisible ? `feedback_card feedback_card_make_visible` : `feedback_card`}>
+          <div
+            className={
+              this.state.isFeedbackMessageVisible
+                ? `feedback_card feedback_card_make_visible`
+                : `feedback_card`
+            }
+          >
             <textarea id="feedback_message_box" />
             <div data-icon="ei-sc-telegram" />
           </div>

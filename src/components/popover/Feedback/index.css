@@ -9,8 +9,8 @@
   display: none;
 }
 
-.feedback_overlay_show{
-    display: block;
+.feedback_overlay_show {
+  display: block;
 }
 
 .feedback_card_holder {
@@ -26,8 +26,8 @@
   transition: bottom 1s;
 }
 
-.feedback_card_make_visible{
-    bottom: 43%;
+.feedback_card_make_visible {
+  bottom: 43%;
 }
 
 #feedback_message_box {

@@ -10,7 +10,7 @@ export default class Home extends React.PureComponent {
     super(props);
     this.state = {
       isMenuVisible: false,
-      isFeedbackVisible: false,
+      isFeedbackVisible: false
     };
   }
 

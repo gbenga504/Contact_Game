@@ -1,69 +1,68 @@
 /** Body styles **/
-.body{
-    margin-top: 150px;
+.body {
+  margin-top: 150px;
 }
 
 /** Image styles **/
-.imageRenderer{
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    background: #e5e5e5;
+.imageRenderer {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background: #e5e5e5;
 }
 
-.imageRenderer img{
-    width: 100%;
-    height:100%;
-    border-radius: 50%;
+.imageRenderer img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 
 /** Text styles **/
-.textRenderer{
-    text-align: justify;
-    font-size: 14px;
-    font-family: 'Raleway', sans-serif;
-    color: #333;
-    padding-left: 30px;
+.textRenderer {
+  text-align: justify;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  color: #333;
+  padding-left: 30px;
 }
-
 
 /** Button styles **/
-.buttonRenderer{
-    margin-top: 150px;
+.buttonRenderer {
+  margin-top: 150px;
 }
 
-.social_button{
-    width: 250px;
-    height: 40px;
-    background: #00695c;
-    border-radius: 20px;
-    position: absolute;
-    cursor: pointer;
-    padding-left: 20px;
+.social_button {
+  width: 250px;
+  height: 40px;
+  background: #00695c;
+  border-radius: 20px;
+  position: absolute;
+  cursor: pointer;
+  padding-left: 20px;
 }
 
-.social_button:hover{
-    background: #004d40;
+.social_button:hover {
+  background: #004d40;
 }
 
 .icon--ei-sc-facebook {
-    fill: #fff;
+  fill: #fff;
 }
 
 .icon--ei-sc-twitter {
-    fill: #fff;
+  fill: #fff;
 }
 
-.icon{
-    width: 28px;
-    height: 28px;
-    margin-top: 6px;
+.icon {
+  width: 28px;
+  height: 28px;
+  margin-top: 6px;
 }
 
-.buttonText{
-    margin-top: -30px;
-    margin-left: 35px;
-    color: white;
-    font-family: "Raleway", sans-serif;
-    font-size: 16px;
+.buttonText {
+  margin-top: -30px;
+  margin-left: 35px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
 }

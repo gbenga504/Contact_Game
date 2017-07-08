@@ -1,4 +1,4 @@
-import {Vertical} from './Vertical';
+import {Menu} from './Menu';
 import {Feedback} from './Feedback';
 
-export {Vertical, Feedback};
+export {Menu, Feedback};
