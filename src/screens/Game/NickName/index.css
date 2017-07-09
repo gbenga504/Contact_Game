@@ -1,0 +1,21 @@
+.nickName {
+  margin-top: 10%;
+}
+
+.nickName input[type="text"] {
+  border: 0px solid transparent;
+  border-bottom: 2px solid #00695c;
+}
+
+.nickName_continue_btn_holder{
+    margin-top: 30px;
+}
+
+.nickName input[type="button"] {
+  width: 100%;
+  height: 40px;
+  background: #00695c;
+  border: 0px solid transparent;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
