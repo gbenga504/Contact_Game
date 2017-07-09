@@ -9,6 +9,9 @@ export const NickName = props => {
           <input
             className="col-xs-12"
             type="text"
+            onKeyUp={ev => {
+              props.setValue(ev.target.value);
+            }}
             placeholder="Enter your game nick name"
           />
         </div>
