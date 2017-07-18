@@ -33,7 +33,7 @@ export default class Home extends React.PureComponent {
           <Layout>
             <Header
               shouldShow={this.state.isMenuVisible}
-              toggleMenu={this.toggleMenuPopOver}
+              onToggleMenu={this.toggleMenuPopOver}
             />
             <Body />
           </Layout>

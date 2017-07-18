@@ -74,7 +74,7 @@ export default class Game extends PureComponent {
         />
         <div className="col-xs-12" style={{ height: "100%" }}>
           <NickName
-            loadGame={this.renderGamePanel}
+            onLoadGame={this.renderGamePanel}
             setValue={this.setNickNameValue}
           />
           <GamePanel setReference={this.setReferenceToGamePanel} />

@@ -17,7 +17,7 @@ export const NickName = props => {
         </div>
         <div className="row nickName_continue_btn_holder">
           <div className="col-xs-12 col-sm-offset-4 col-sm-4">
-            <input type="button" value="continue" onClick={props.loadGame} />
+            <input type="button" value="continue" onClick={props.onLoadGame} />
           </div>
         </div>
       </div>
