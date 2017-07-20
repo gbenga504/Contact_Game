@@ -1,0 +1,19 @@
+.container-fluid{
+    display: flex;
+    -webkit-display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    -webkit-display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    height: 100%;
+    padding: 0px 20px 0px 20px;
+    margin: auto;
+}
