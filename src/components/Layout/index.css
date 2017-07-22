@@ -2,11 +2,6 @@
     height: 100%;
 }
 
-.app_container_column{
-    height: 100%;
-    padding: 0px;
-}
-
 @media screen and (min-width:0px) and (max-width:767px) {
     .app_container{
         padding-left: 10px;

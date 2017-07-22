@@ -28,16 +28,14 @@ export default class Home extends React.PureComponent {
 
   render() {
     return (
-      <div className="row" style={{ height: "100%" }}>
-        <div className="col-xs-12" style={{ height: "100%" }}>
-          <Layout>
-            <Header
-              shouldShow={this.state.isMenuVisible}
-              onToggleMenu={this.toggleMenuPopOver}
-            />
-            <Body />
-          </Layout>
-        </div>
+      <div className="column" style={{ height: "100%" }}>
+        <Layout>
+          <Header
+            shouldShow={this.state.isMenuVisible}
+            onToggleMenu={this.toggleMenuPopOver}
+          />
+          <Body />
+        </Layout>
         <Footer toggleFeedback={this.toggleFeedbackPopOver} />
         <Feedback
           shouldShow={this.state.isFeedbackVisible}
