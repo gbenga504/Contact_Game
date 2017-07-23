@@ -66,19 +66,17 @@ export default class Game extends PureComponent {
 
   render() {
     return (
-      <div className="row" style={{ height: "100%" }}>
+      <div className="column" style={{ height: "100%", justifyContent: "center", alignItems:"center", flex: 1 }}>
         <Report
           id={this.state.reportId}
           message={this.state.reportMessage}
           type={this.state.reportType}
         />
-        <div className="col-xs-12" style={{ height: "100%" }}>
-          <NickName
-            onLoadGame={this.renderGamePanel}
-            setValue={this.setNickNameValue}
-          />
-          <GamePanel setReference={this.setReferenceToGamePanel} />
-        </div>
+        <NickName
+          onLoadGame={this.renderGamePanel}
+          setValue={this.setNickNameValue}
+        />
+        <GamePanel setReference={this.setReferenceToGamePanel} />
       </div>
     );
   }

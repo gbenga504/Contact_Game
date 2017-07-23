@@ -19,7 +19,7 @@ export class Report extends PureComponent {
     return (
       <div className="report" ref={ref => (this.report = ref)}>
         <div
-          className={`col-xs-offset-1 col-xs-10 col-sm-offset-4 col-sm-4 ${this
+          className={`${this
             .props.type}`}
         >
           <div className="reportText">

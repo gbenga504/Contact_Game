@@ -1,22 +1,21 @@
-.nickName {
-  margin-top: 20%;
-}
-
-.nickName input[type="text"] {
+input[type="text"] {
   border: 0px solid transparent;
   border-bottom: 2px solid #00695c;
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   outline: none;
+  width: 500px;
 }
 
 .nickName_continue_btn_holder {
   margin-top: 30px;
+  width: 500px;
+  justify-content: center;
 }
 
-.nickName input[type="button"] {
-  width: 100%;
+.nickName_continue_btn_holder input[type="button"] {
+  width: 200px;
   height: 40px;
   background: #00695c;
   border: 0px solid transparent;
@@ -25,7 +24,7 @@
   outline: none;
 }
 
-.nickName input[type="button"]:hover {
+.nickName_continue_btn_holder input[type="button"]:hover {
   background: #004d40;
 }
 
