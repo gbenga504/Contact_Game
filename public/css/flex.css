@@ -1,5 +1,14 @@
-html{
+html {
   height: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
 }
 
 body {
@@ -34,8 +43,8 @@ body {
   justify-content: flex-start;
 }
 
-.column{
-   display: flex;
+.column {
+  display: flex;
   -webkit-display: flex;
   flex-direction: column;
   justify-content: flex-start;

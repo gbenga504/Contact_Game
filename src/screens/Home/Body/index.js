@@ -22,9 +22,9 @@ export const Body = () => {
 
 const ImageRenderer = () => {
   return (
-      <div className="imageRenderer">
-        <img src={""} alt="" />
-      </div>
+    <div className="imageRenderer">
+      <img src={""} alt="" />
+    </div>
   );
 };
 
@@ -51,7 +51,7 @@ const TextRenderer = () => {
 const ButtonRenderer = props => {
   return (
     <div className="row buttonRenderer">
-        {props.children}
+      {props.children}
     </div>
   );
 };
