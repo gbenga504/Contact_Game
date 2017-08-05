@@ -1,6 +1,7 @@
 import React, { PureComponent } from "react";
 import { NickName } from "./NickName";
 import GamePanel from "./GamePanel";
+//import gameContoller from "../../utils/gameController";
 import { Report } from "../../components/popover";
 
 export default class Game extends PureComponent {
@@ -12,7 +13,8 @@ export default class Game extends PureComponent {
       nickName: "",
       reportMessage: null,
       reportType: null,
-      reportId: Date.now()
+      reportId: Date.now(),
+      shouldShowLoader: false
     };
   }
 
@@ -50,9 +52,10 @@ export default class Game extends PureComponent {
           this.state.game_panel_element.webkitRequestFullScreen();
         } else if (this.state.game_panel_element.msRequestFullscreen)
           this.state.game_panel_element.msRequestFullscreen();
-        this.setState({
-          isFullScreen: true
-        });
+        // this.setState({
+        //   isFullScreen: true,
+        //   shouldShowLoader: true
+        // });
       }
     } else {
       this.setState({
@@ -66,7 +69,15 @@ export default class Game extends PureComponent {
 
   render() {
     return (
-      <div className="column" style={{ height: "100%", justifyContent: "center", alignItems:"center", flex: 1 }}>
+      <div
+        className="column"
+        style={{
+          height: "100%",
+          justifyContent: "center",
+          alignItems: "center",
+          flex: 1
+        }}
+      >
         <Report
           id={this.state.reportId}
           message={this.state.reportMessage}
@@ -76,7 +87,10 @@ export default class Game extends PureComponent {
           onLoadGame={this.renderGamePanel}
           setValue={this.setNickNameValue}
         />
-        <GamePanel setReference={this.setReferenceToGamePanel} />
+        <GamePanel
+          setReference={this.setReferenceToGamePanel}
+          shouldShowLoader={this.state.shouldShowLoader}
+        />
       </div>
     );
   }

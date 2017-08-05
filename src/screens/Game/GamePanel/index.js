@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 //import {gameController} from "../../../components/service";
-import {Loader} from "../../../components/popover";
+import { Loader } from "../../../components/popover";
 import "./index.css";
 
 export default class GamePanel extends React.PureComponent {
@@ -16,7 +16,7 @@ export default class GamePanel extends React.PureComponent {
   render() {
     return (
       <div className="column game_panel" ref={ref => (this.gamePanel = ref)}>
-        <Loader />
+        <Loader show={this.props.shouldShowLoader} />
       </div>
     );
   }
