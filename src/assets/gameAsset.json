@@ -1,0 +1,182 @@
+[
+  {
+    "type": "image",
+    "id": "introCanvas",
+    "name": "splashscreen.png"
+  },
+  {
+    "type": "image",
+    "id": "timerBoard",
+    "name": "bigTimer.png"
+  },
+  {
+    "type": "image",
+    "id": "timerLine",
+    "name": "timerLine.png"
+  },
+  {
+    "type": "image",
+    "id": "dashboard",
+    "name": "dashboard.png"
+  },
+  {
+    "type": "image",
+    "id": "gameCanvas",
+    "name": "gameCarpet.png"
+  },
+  {
+    "type": "image",
+    "id": "fifty50Image",
+    "name": "fifty50.png"
+  },
+  {
+    "type": "image",
+    "id": "fifty50xImage",
+    "name": "fifty50X.png"
+  },
+  {
+    "type": "image",
+    "id": "ans1Taken",
+    "name": "optionAred.png"
+  },
+  {
+    "type": "image",
+    "id": "ans2Taken",
+    "name": "optionBred.png"
+  },
+  {
+    "type": "image",
+    "id": "ans3Taken",
+    "name": "optionCred.png"
+  },
+  {
+    "type": "image",
+    "id": "ans4Taken",
+    "name": "optionDred.png"
+  },
+  {
+    "type": "image",
+    "id": "ans1Correct",
+    "name": "optionAgreen.png"
+  },
+  {
+    "type": "image",
+    "id": "ans2Correct",
+    "name": "optionBgreen.png"
+  },
+  {
+    "type": "image",
+    "id": "ans3Correct",
+    "name": "optionCgreen.png"
+  },
+  {
+    "type": "image",
+    "id": "ans4Correct",
+    "name": "optionDgreen.png"
+  },
+  {
+    "type": "image",
+    "id": "ans1Normal",
+    "name": "optionA.png"
+  },
+  {
+    "type": "image",
+    "id": "ans2Normal",
+    "name": "optionB.png"
+  },
+  {
+    "type": "image",
+    "id": "ans3Normal",
+    "name": "optionC.png"
+  },
+  {
+    "type": "image",
+    "id": "questionTag",
+    "name": "questiontag.png"
+  },
+  {
+    "type": "image",
+    "id": "walkaway",
+    "name": "walkaway.png"
+  },
+  {
+    "type": "image",
+    "id": "thanks4luv",
+    "name": "thanks4luv.png"
+  },
+  {
+    "type": "image",
+    "id": "ans4Normal",
+    "name": "optionD.png"
+  },
+  {
+    "type": "image",
+    "id": "jackpot",
+    "name": "jackpot.png"
+  },
+  {
+    "type": "image",
+    "id": "points",
+    "name": "points.png"
+  },
+  {
+    "type": "audio",
+    "id": "openingMusic",
+    "name": "intro.mp3"
+  },
+  {
+    "type": "audio",
+    "id": "introMusic",
+    "name": "hot_sit.mp3"
+  },
+  {
+    "type": "audio",
+    "id": "questStart",
+    "name": "questStart.mp3"
+  },
+  {
+    "type": "audio",
+    "id": "critical",
+    "name": "critical.mp3"
+  },
+  {
+    "type": "audio",
+    "id": "joker1",
+    "name": "joker_1.mp3"
+  },
+  {
+    "type": "audio",
+    "id": "joker2",
+    "name": "joker_2.mp3"
+  },
+  {
+    "type": "audio",
+    "id": "fifMusic",
+    "name": "50_50.mp3"
+  },
+  {
+    "type": "audio",
+    "id": "outro",
+    "name": "outro.mp3"
+  },
+  {
+    "type": "audio",
+    "id": "answerPick",
+    "name": "answerPick.mp3"
+  },
+  {
+    "type": "audio",
+    "id": "answerResolve",
+    "name": "answerResolve.mp3"
+  },
+  {
+    "type": "audio",
+    "id": "continueMusic",
+    "name": "continue.mp3"
+  },
+  {
+    "type": "audio",
+    "id": "timesUp",
+    "name": "timesUp.mp3"
+  }
+]

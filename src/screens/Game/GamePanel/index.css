@@ -6,8 +6,7 @@
   height: 100%;
   z-index: 1000;
   display: none;
-  justify-content: "center";
-  align-items: "center";
+  background: #fff;
 }
 
 .game_panel_show {

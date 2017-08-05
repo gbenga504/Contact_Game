@@ -1,7 +1,6 @@
 import React, { PureComponent } from "react";
 import { NickName } from "./NickName";
 import GamePanel from "./GamePanel";
-//import gameContoller from "../../utils/gameController";
 import { Report } from "../../components/popover";
 
 export default class Game extends PureComponent {
@@ -52,10 +51,10 @@ export default class Game extends PureComponent {
           this.state.game_panel_element.webkitRequestFullScreen();
         } else if (this.state.game_panel_element.msRequestFullscreen)
           this.state.game_panel_element.msRequestFullscreen();
-        // this.setState({
-        //   isFullScreen: true,
-        //   shouldShowLoader: true
-        // });
+        this.setState({
+          isFullScreen: true,
+          shouldShowLoader: true
+        });
       }
     } else {
       this.setState({

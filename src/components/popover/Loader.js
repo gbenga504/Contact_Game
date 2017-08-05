@@ -1,6 +1,12 @@
 import React from "react";
 
 export class Loader extends React.PureComponent {
+  shouldRenderLoaderText = () => {
+    if (this.props.showLoaderText)
+      return <div style={styles.loaderText}>ALL IMAGES LOADING</div>;
+    return null;
+  };
+
   render() {
     const className = "preloader-wrapper small";
     return (
@@ -61,6 +67,7 @@ export class Loader extends React.PureComponent {
             </div>
           </div>
         </div>
+        {this.shouldRenderLoaderText()}
       </div>
     );
   }
@@ -77,6 +84,13 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     height: "100%",
-    alignItems: "center"
+    alignItems: "center",
+    flexDirection: "column"
+  },
+  loaderText:{
+    fontFamily: "raleway_bold",
+    color: "#333",
+    fontSize: 14,
+    marginTop: "20px",
   }
 };

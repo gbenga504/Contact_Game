@@ -1,3 +1,6 @@
+import config from "../game.config";
+import gameAsset from "../assets/gameAsset.json";
+
 export default () => {
   /**
    * @namespace 
@@ -38,23 +41,24 @@ export default () => {
         canvas.width = this.width;
         canvas.height = this.height;
         gamePanelRef.appendChild(canvas);
-
         gamePanelRef.gameAssetLoadProgress[this.id] = true;
 
         let ctx = canvas.getContext("2d");
         ctx.drawImage(this, 0, 0);
+
+        ++gameController.setAssetLoadedCount;
         gamePanelRef.checkIfAllAssetIsLoaded();
       }
     };
   };
 
   /**
- * @param {string} id 
- * @param {string} src 
- * @param {HTMLTextElement} assetLoadingTextRef
- * @param {HTMLElement} gamePanelRef
- * This function creates and loads the game audio while appending it to the game panel 
- */
+   * @param {string} id 
+   * @param {string} src 
+   * @param {HTMLTextElement} assetLoadingTextRef
+   * @param {HTMLElement} gamePanelRef
+   * This function creates and loads the game audio while appending it to the game panel 
+  */
   gameController.loadAudio = (id, src, assetLoadingTextRef, gamePanelRef) => {
     let audio = new Audio();
     audio.setAttribute("id", id);
@@ -63,6 +67,8 @@ export default () => {
       if (gameController.gameAssetLoadProgress[this.id] !== true) {
         assetLoadingTextRef.innerHTML = "LOADING AUDIO COMPONENTS";
         gameController.gameAssetLoadProgress[this.id] = true;
+
+        ++gameController.setAssetLoadedCount;
         gameController.checkIfAllAssetIsLoaded();
 
         gamePanelRef.appendChild(this);
@@ -79,23 +85,24 @@ export default () => {
   gameController.composeImageSrc = name => {
     let width = window.innerWidth,
       src = "";
-    if (width >= 0 && width <= 767) src = `/images/xs/${name}`;
-    else if (width >= 768 && width <= 991) src = `/images/sm/${name}`;
-    else if (width >= 992) src = `/images/lg/${name}`;
+    if (width >= 0 && width <= 767) src = `${config.imagePath.sm}/${name}`;
+    else if (width >= 768 && width <= 991)
+      src = `${config.imagePath.md}/${name}`;
+    else if (width >= 992) src = `${config.imagePath.lg}/${name}`;
     return src;
   };
 
   /**
    * This function loads all the assets for the game 
-   */
+  */
   gameController.loadAssets = () => {
     if (!gameController.isAllAssetsLoaded) {
-      for (let assets in gameController.assetsDocker) {
-        let { type, id, src } = assets;
+      for (let asset of gameAsset) {
+        let { type, id, name } = asset;
         if (type === "audio") {
-          gameController.loadAudio(id, src);
+          gameController.loadAudio(id, `${config.musicPath}/${name}`);
         } else {
-          let newSrc = gameController.composeImageSrc(src);
+          let newSrc = gameController.composeImageSrc(name);
           gameController.loadImage(id, newSrc);
         }
       }
@@ -111,16 +118,13 @@ export default () => {
    * @param {HTMLElement} assetLoadingContainerRef
    * @param {HTMLElement} lifelineExposureRef
    * function checks all assets to make sure that they have been loaded 
-   */
+  */
   gameController.checkIfAllAssetIsLoaded = (
     assetLoadingTextRef,
     assetLoadingContainerRef,
     lifelineExposureRef
   ) => {
-    let percent =
-      gameController.setAssetLoadedCount /
-      gameController.assetsDocker.length *
-      100;
+    let percent = gameController.setAssetLoadedCount / gameAsset.length * 100;
     if (percent === 100) {
       assetLoadingTextRef.innerHTML = "ALL COMPONENTS FULLY LOADED";
       assetLoadingContainerRef.style.display = "none";
