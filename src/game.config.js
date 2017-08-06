@@ -1,9 +1,10 @@
 export default {
   imagePath: {
     normal: "/images",
-    lg: "images/lg",
-    md: "images/md",
-    sm: "images/sm"
+    lg: "/lg",
+    md: "/md",
+    sm: "/sm"
   },
-  musicPath: "/audio"
+  musicPath: "/audio",
+  css: "/css/game.css"
 };

@@ -1,9 +1,15 @@
 import React from "react";
 
 export class Loader extends React.PureComponent {
+  componentDidMount() {
+    this.props.updateLoadingTextRef(this.loadingText);
+  }
+
   shouldRenderLoaderText = () => {
     if (this.props.showLoaderText)
-      return <div style={styles.loaderText}>ALL IMAGES LOADING</div>;
+      return (
+        <div style={styles.loaderText} ref={ref => (this.loadingText = ref)} />
+      );
     return null;
   };
 
@@ -87,10 +93,10 @@ const styles = {
     alignItems: "center",
     flexDirection: "column"
   },
-  loaderText:{
+  loaderText: {
     fontFamily: "raleway_bold",
     color: "#333",
     fontSize: 14,
-    marginTop: "20px",
+    marginTop: "20px"
   }
 };

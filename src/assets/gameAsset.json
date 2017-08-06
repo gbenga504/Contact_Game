@@ -1,182 +1,182 @@
 [
   {
     "type": "image",
-    "id": "introCanvas",
+    "className": "introCanvas",
     "name": "splashscreen.png"
   },
   {
     "type": "image",
-    "id": "timerBoard",
+    "className": "timerBoard",
     "name": "bigTimer.png"
   },
   {
     "type": "image",
-    "id": "timerLine",
+    "className": "timerLine",
     "name": "timerLine.png"
   },
   {
     "type": "image",
-    "id": "dashboard",
+    "className": "dashboard",
     "name": "dashboard.png"
   },
   {
     "type": "image",
-    "id": "gameCanvas",
+    "className": "gameCanvas",
     "name": "gameCarpet.png"
   },
   {
     "type": "image",
-    "id": "fifty50Image",
+    "className": "fifty50Image",
     "name": "fifty50.png"
   },
   {
     "type": "image",
-    "id": "fifty50xImage",
+    "className": "fifty50xImage",
     "name": "fifty50X.png"
   },
   {
     "type": "image",
-    "id": "ans1Taken",
+    "className": "ans1Taken",
     "name": "optionAred.png"
   },
   {
     "type": "image",
-    "id": "ans2Taken",
+    "className": "ans2Taken",
     "name": "optionBred.png"
   },
   {
     "type": "image",
-    "id": "ans3Taken",
+    "className": "ans3Taken",
     "name": "optionCred.png"
   },
   {
     "type": "image",
-    "id": "ans4Taken",
+    "className": "ans4Taken",
     "name": "optionDred.png"
   },
   {
     "type": "image",
-    "id": "ans1Correct",
+    "className": "ans1Correct",
     "name": "optionAgreen.png"
   },
   {
     "type": "image",
-    "id": "ans2Correct",
+    "className": "ans2Correct",
     "name": "optionBgreen.png"
   },
   {
     "type": "image",
-    "id": "ans3Correct",
+    "className": "ans3Correct",
     "name": "optionCgreen.png"
   },
   {
     "type": "image",
-    "id": "ans4Correct",
+    "className": "ans4Correct",
     "name": "optionDgreen.png"
   },
   {
     "type": "image",
-    "id": "ans1Normal",
+    "className": "ans1Normal",
     "name": "optionA.png"
   },
   {
     "type": "image",
-    "id": "ans2Normal",
+    "className": "ans2Normal",
     "name": "optionB.png"
   },
   {
     "type": "image",
-    "id": "ans3Normal",
+    "className": "ans3Normal",
     "name": "optionC.png"
   },
   {
     "type": "image",
-    "id": "questionTag",
+    "className": "questionTag",
     "name": "questiontag.png"
   },
   {
     "type": "image",
-    "id": "walkaway",
+    "className": "walkaway",
     "name": "walkaway.png"
   },
   {
     "type": "image",
-    "id": "thanks4luv",
+    "className": "thanks4luv",
     "name": "thanks4luv.png"
   },
   {
     "type": "image",
-    "id": "ans4Normal",
+    "className": "ans4Normal",
     "name": "optionD.png"
   },
   {
     "type": "image",
-    "id": "jackpot",
+    "className": "jackpot",
     "name": "jackpot.png"
   },
   {
     "type": "image",
-    "id": "points",
+    "className": "points",
     "name": "points.png"
   },
   {
     "type": "audio",
-    "id": "openingMusic",
+    "className": "openingMusic",
     "name": "intro.mp3"
   },
   {
     "type": "audio",
-    "id": "introMusic",
+    "className": "introMusic",
     "name": "hot_sit.mp3"
   },
   {
     "type": "audio",
-    "id": "questStart",
+    "className": "questStart",
     "name": "questStart.mp3"
   },
   {
     "type": "audio",
-    "id": "critical",
+    "className": "critical",
     "name": "critical.mp3"
   },
   {
     "type": "audio",
-    "id": "joker1",
+    "className": "joker1",
     "name": "joker_1.mp3"
   },
   {
     "type": "audio",
-    "id": "joker2",
+    "className": "joker2",
     "name": "joker_2.mp3"
   },
   {
     "type": "audio",
-    "id": "fifMusic",
+    "className": "fifMusic",
     "name": "50_50.mp3"
   },
   {
     "type": "audio",
-    "id": "outro",
+    "className": "outro",
     "name": "outro.mp3"
   },
   {
     "type": "audio",
-    "id": "answerPick",
+    "className": "answerPick",
     "name": "answerPick.mp3"
   },
   {
     "type": "audio",
-    "id": "answerResolve",
+    "className": "answerResolve",
     "name": "answerResolve.mp3"
   },
   {
     "type": "audio",
-    "id": "continueMusic",
+    "className": "continueMusic",
     "name": "continue.mp3"
   },
   {
     "type": "audio",
-    "id": "timesUp",
+    "className": "timesUp",
     "name": "timesUp.mp3"
   }
 ]
