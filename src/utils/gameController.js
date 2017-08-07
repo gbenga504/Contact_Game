@@ -116,7 +116,7 @@ gameController.loadAssets = (gamePanel, loadingText) => {
         gameController.loadImage(className, newSrc);
       }
     }
-  } 
+  }
 };
 
 /**
